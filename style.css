@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    /* border: 3px solid red; */
+    width: 100%;
+    max-width: 1440px;
+    padding: 0px 80px;
+    margin: 0 auto;
+}
+
+h2,
+h5,
+a,
+p {
+    color: #fff;
+}
+
+.main_header {
+    background-color: #303030;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 16px 0px; */
+}
+
+header .nav {
+    display: flex;
+    gap: 50px;
+}
+
+header .nav li {
+    list-style-type: none;
+}
+
+header .nav li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    /* font-size: 25px; */
+}
+
+/* SLIDER */
+.slider-img img {
+    width: 100%;
+}
+
+.main-slider {
+    position: relative;
+    /* border: 3px solid red; */
+}
+
+.slider-img {
+    width: 100%;
+    display: flex;
+}
+
+.slider-description {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    width: 635px;
+    /* transform: translate(0%, -70%); */
+}
+
+.slider-description h2 {
+    font-weight: 400;
+    font-size: 124px;
+
+}
+
+.slider-description p {
+    font-weight: 400;
+    font-size: 30px;
+    /* padding: 35px 0px; */
+}
+
+.slider-description a {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25px;
+    background-color: #e8631c;
+    text-decoration: none;
+    padding: 25px 80px;
+
+    display: inline-block;
+}
+
+.registerbutton {
+    margin: 10px 0px;
+}
+
+/* POPULAR MENU */
+.main-dance-tour {
+    background-color: #303030;
+    background-image: url(./img/best-dance-bg.png);
+    text-align: center;
+}
+
+.dance-tour {
+    padding: 80px 0 125px 0;
+}
+
+.dance-tour h4 {
+    font-weight: 700;
+    font-size: 64px;
+    padding-bottom: 30px;
+}
+
+.dance-tour p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.cards {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.card {
+    /* border: 2px solid red; */
+    background-color: #303030;
+    width: 30%;
+    padding-bottom: 30px;
+    height: 493px;
+}
+
+.card img {
+    /* width: 372px; */
+    width: 100%;
+
+}
+
+.card h5 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 25px 0px;
+}
+
+.card p {
+    /* padding: 10px 0px; */
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+
+/* pricing */
+.main-pricing {
+    background-color: #303030;
+    background-image: url(./img/black-image.png);
+    text-align: center;
+}
+
+.pricing {
+    padding: 80px 0 125px 0;
+}
+
+.pricing h2 {
+    font-weight: 700;
+    font-size: 64px;
+    padding-bottom: 30px;
+}
+
+.pricing p {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.pcards {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    /* width:100%; */
+    padding-top: 50px;
+}
+
+.pcard {
+    /* border: 2px solid red; */
+    background-color: #e8631c;
+    width: 30%;
+    padding-bottom: 30px;
+    /* height: 493px; */
+}
+
+.pcard img {
+    margin: 60px 0px;
+
+}
+
+.dollar {
+    text-align: center;
+    margin: 30px 0px 0px 32px;
+    padding: 20px 0px;
+    width: 322px;
+    border-radius: 4px;
+    background-color: #303030;
+}
+
+.dollar a {
+    text-decoration: none;
+}
+
+.pcard h5 {
+    font-size: 28px;
+    font-weight: 700;
+    padding: 25px 0px;
+}
+
+.pcard p {
+    font-size: 17px;
+    font-weight: 400;
+
+}
+
+.amazing-main {
+    display: flex;
+    /* width: 100%; */
+}
+
+.best-main {
+    display: flex;
+}
+
+.amazingdance {
+    width: 50%;
+    /* border: 3px solid red; */
+}
+
+.bestdance {
+    width: 50%;
+}
+
+.amazingdance-description {
+    width: 50%;
+    background-image: url(./img/amazing-right.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bestdance-description {
+    width: 50%;
+    background-image: url(./img/amazing-left.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.amazing-dancedetail {
+    padding: 0px 0px 0px 40px;
+    margin: 321px 0px 0px 0px;
+}
+
+.best-dancedetail {
+    padding: 0px 0px 0px 80px;
+    margin: 321px 0px 0px 0px;
+
+}
+
+.amazing-dancedetail h5,
+.best-dancedetail h5 {
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    padding: 0px 0px 60px 0px;
+
+
+}
+
+.amazing-dancedetail-paragraph,
+.best-dancedetail-paragraph {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 0px 70px 0px;
+}
+
+.amazing-dancedetail a,
+.best-dancedetail a {
+    background-color: #303030;
+    border-radius: 8px;
+    padding: 18px 100px 18px 100px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/* our */
+.main-our-statistics {
+    background-color: #303030;
+    height: 974px;
+}
+
+.our-statistics {
+    text-align: center;
+}
+
+.our-statistics-title {
+    padding: 200px 0px 60px 0px;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.our-statistics-paragraph {
+    padding: 0px 0px 180px 0px;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.main-score {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.main-score h1 {
+    font-size: 66px;
+    font-weight: 700;
+}
+
+.main-score p {
+    font-size: 41px;
+    font-weight: 400;
+}
+
+/* herbert simon */
+
+
+.main-herbert-simon {
+    background-image: url(./img/HERBERT-SIMON-MIG.png);
+    height: 955px;
+
+
+}
+
+.herbert-simon {
+    text-align: center;
+    color: #fff;
+}
+
+.herbert-paragraph {
+    padding: 380px 0px 74px 0px;
+    font-size: 50px;
+}
+
+.herbert-title {
+    font-size: 58px;
+}
+
+
+/* subscibe */
+
+.main-subscibe {
+    background-image: url(./img/subscribe.gif);
+    height: 600px;
+
+}
+
+.subscribe {
+    text-align: center;
+    color: #fff;
+    padding: 0px 280px;
+}
+
+
+.subscribe-title {
+    padding: 130px 0px 60px 0px;
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.subscribe-paragraph {
+    padding: 0px 0px 55px 0px;
+    font-size: 29px;
+    font-weight: 400;
+
+}
+
+.subscribe form {
+    justify-content: center;
+    display: flex;
+}
+
+form ::placeholder {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+form input {
+    font-weight: 400;
+    padding: 24px 380px 24px 30px;
+}
+
+form button {
+    font-size: 25px;
+    font-weight: 600;
+    background-color: #303030;
+    padding: 20px 50px;
+    color: #fff;
+}
+
+
+/* footer */
+
+.header3 {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.allsection {
+    display: flex;
+    padding: 180px 0px 200px 0px;
+}
+
+.titlesec {
+    min-width: 40%;
+}
+
+.titlesec h3 {
+    font-size: 31px;
+    font-weight: 300;
+}
+
+.titlesec p {
+    padding: 25px 47px 25px 0px;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.socilamedia {
+    display: flex;
+    gap: 20px;
+}
+
+.footerleft {
+    min-width: 60%;
+    display: flex;
+    gap: 50px;
+    justify-content: right;
+    font-size: 23.7px;
+}
+
+.about {
+    min-width: 20%;
+
+}
+
+.about h3 {
+    padding-bottom: 20px;
+    font-size: 31px;
+    font-weight: 300;
+}
+
+.about ul li {
+    padding-bottom: 10px;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.services {
+    min-width: 20%;
+}
+
+.services h3 {
+    padding-bottom: 20px;
+    font-size: 31px;
+    font-weight: 300;
+}
+
+.services ul li {
+    padding-bottom: 10px;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.other {
+    min-width: 20%;
+}
+
+.other h3 {
+    padding-bottom: 20px;
+    font-size: 31px;
+    font-weight: 300;
+}
+
+.other ul li {
+    padding-bottom: 10px;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.social {
+    padding: 0px 0px 10px 0px;
+}
+
+.footerleft ul a li {
+    list-style-type: none;
+
+}
+
+.footerleft ul a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footerleft ul a li:hover {
+    text-decoration: underline;
+    color: antiquewhite;
+}
+
+/* 578px */
