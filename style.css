@@ -443,36 +443,36 @@ header .nav li a {
     font-weight: 500;
 }
 
-
-
 .subscribe-paragraph p {
     padding: 0px 0px 55px 0px;
     font-size: 29px;
     font-weight: 400;
-
 }
 
-.subscribe form {
-    justify-content: center;
+/* form {
     display: flex;
-}
+    width: 70%;
+} */
+
 
 form ::placeholder {
+    text-align: center;
     font-size: 25px;
     font-weight: 400;
 }
 
 form input {
     font-weight: 400;
-    padding: 10px;
+    padding: 15px 28px;
+    margin: 15px 0px;
 }
-
 
 form button {
     font-size: 25px;
     font-weight: 600;
     background-color: #303030;
     color: #fff;
+    padding: 10px;
 }
 
 
@@ -589,6 +589,13 @@ form button {
 }
 
 /*Media Quers*/
+@media only screen and (min-width: 375px) {
+    .subscribe form {
+        justify-content: center;
+        display: flex;
+    }
+}
+
 @media only screen and (min-width: 1024px) {
     .container {
         padding: 0 55px;
