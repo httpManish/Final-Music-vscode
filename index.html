@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d1063cf1c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <title>index</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -32,6 +35,23 @@
                     <a href="#"><img src="./img/Search-logo.png" alt="search"></a>
                 </div>
             </header>
+            <!--Mobile nav-->
+            <div class="mobile_header">
+                <div class="logo">
+                    <a href="/"> <img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="bars">
+                    <a href="javascript:void(0);" id="mobilebars"><i class="fa-solid fa-bars"></i></a>
+                </div>
+
+            </div>
+            <ul class="mobilenav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Promo</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
     </div>
 
@@ -41,16 +61,16 @@
         <img class="slider-img" src="./img/slider-img.png" alt="slider image 1">
         <!-- </div> -->
         <div class="slider">
-            <div class="container">
-                <div class="slider-description">
-                    <h2>Title Here</h2>
+            <div class="slider-description">
+                <h2>Title Here</h2>
+                <div class="slider-descriptionp">
                     <p>Lorem ipsum dolor sit amet, consectetur</p>
                     <p>adipiscing elit. Vivamus lacinia odio vitae </p>
                     <p>vestibulum vestibulum. </p>
-                    <div class="registerbutton">
+                </div>
+                <div class="registerbutton">
 
-                        <a href="#">REGISTER NOW</a>
-                    </div>
+                    <a href="#">REGISTER NOW</a>
                 </div>
             </div>
         </div>
@@ -348,7 +368,13 @@
 
 
 
-
+    <script>
+        $(document).ready(function () {
+            $("#mobilebars").click(function () {
+                $(".mobilenav").slideToggle("slow");
+            });
+        });
+    </script>
 
 
 

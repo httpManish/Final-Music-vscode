@@ -16,7 +16,7 @@
     /* border: 3px solid red; */
     width: 100%;
     max-width: 1440px;
-    padding: 0px 80px;
+    padding: 0px 40px;
     margin: 0 auto;
 }
 
@@ -25,6 +25,7 @@ h5,
 a,
 p {
     color: #fff;
+
 }
 
 .main_header {
@@ -47,12 +48,60 @@ header .nav li {
     list-style-type: none;
 }
 
+header {
+    display: none;
+}
+
 header .nav li a {
     text-decoration: none;
     color: white;
     font-weight: 400;
     /* font-size: 25px; */
 }
+
+/*Mobile nav*/
+.bars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#mobilenav {
+    display: none;
+}
+
+.mobile_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bars .fa-bars {
+    color: #fff;
+}
+
+.mobilenav {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.mobilenav li {
+    list-style-type: none;
+    padding: 10px 0px;
+}
+
+.mobilenav li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mobilenav li :hover {
+    background-color: #000;
+}
+
 
 /* SLIDER */
 .slider-img img {
@@ -70,33 +119,35 @@ header .nav li a {
 }
 
 .slider-description {
-    position: absolute;
     top: 40%;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
     left: 5%;
-    width: 635px;
     /* transform: translate(0%, -70%); */
 }
 
+
 .slider-description h2 {
     font-weight: 400;
-    font-size: 124px;
+    font-size: 64px;
 
 }
 
-.slider-description p {
+.slider-descriptionp {
     font-weight: 400;
     font-size: 30px;
-    /* padding: 35px 0px; */
+    padding: 35px 0px;
 }
 
 .slider-description a {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 19px;
     background-color: #e8631c;
     text-decoration: none;
-    padding: 25px 80px;
+    padding: 8px 20px;
 
     display: inline-block;
 }
@@ -118,7 +169,7 @@ header .nav li a {
 
 .dance-tour h4 {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 49px;
     padding-bottom: 30px;
 }
 
@@ -132,15 +183,15 @@ header .nav li a {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    flex-direction: column;
     padding-top: 50px;
 }
 
 .card {
     /* border: 2px solid red; */
     background-color: #303030;
-    width: 30%;
     padding-bottom: 30px;
-    height: 493px;
+
 }
 
 .card img {
@@ -176,7 +227,8 @@ header .nav li a {
 
 .pricing h2 {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 38px;
+    text-align: center;
     padding-bottom: 30px;
 }
 
@@ -189,6 +241,7 @@ header .nav li a {
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     gap: 30px;
     /* width:100%; */
     padding-top: 50px;
@@ -197,7 +250,6 @@ header .nav li a {
 .pcard {
     /* border: 2px solid red; */
     background-color: #e8631c;
-    width: 30%;
     padding-bottom: 30px;
     /* height: 493px; */
 }
@@ -209,9 +261,8 @@ header .nav li a {
 
 .dollar {
     text-align: center;
-    margin: 30px 0px 0px 32px;
+    margin: 30px 10px 0px 4px;
     padding: 20px 0px;
-    width: 322px;
     border-radius: 4px;
     background-color: #303030;
 }
@@ -221,7 +272,7 @@ header .nav li a {
 }
 
 .pcard h5 {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 700;
     padding: 25px 0px;
 }
@@ -234,50 +285,43 @@ header .nav li a {
 
 .amazing-main {
     display: flex;
-    /* width: 100%; */
+    flex-direction: column;
 }
 
 .best-main {
     display: flex;
+    flex-direction: column;
 }
 
-.amazingdance {
-    width: 50%;
-    /* border: 3px solid red; */
-}
-
-.bestdance {
-    width: 50%;
-}
 
 .amazingdance-description {
-    width: 50%;
+    width: 100%;
     background-image: url(./img/amazing-right.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .bestdance-description {
-    width: 50%;
+    width: 100%;
     background-image: url(./img/amazing-left.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .amazing-dancedetail {
-    padding: 0px 0px 0px 40px;
-    margin: 321px 0px 0px 0px;
+    text-align: center;
+    margin: 55px 0px 0px 0px;
 }
 
 .best-dancedetail {
-    padding: 0px 0px 0px 80px;
-    margin: 321px 0px 0px 0px;
+    text-align: center;
+    margin: 55px 0px 0px;
 
 }
 
 .amazing-dancedetail h5,
 .best-dancedetail h5 {
-    font-size: 75px;
+    font-size: 39px;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
@@ -288,17 +332,17 @@ header .nav li a {
 
 .amazing-dancedetail-paragraph,
 .best-dancedetail-paragraph {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    padding: 0px 0px 70px 0px;
+    padding: 0px 9px 70px 9px;
 }
 
 .amazing-dancedetail a,
 .best-dancedetail a {
     background-color: #303030;
     border-radius: 8px;
-    padding: 18px 100px 18px 100px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
@@ -309,12 +353,10 @@ header .nav li a {
 /* our */
 .main-our-statistics {
     background-color: #303030;
-    height: 974px;
 }
 
 .our-statistics {
     text-align: center;
-    padding: 0px 60px;
     color: #fff;
 }
 
@@ -324,15 +366,15 @@ header .nav li a {
 } */
 
 .our-statistics-title h1 {
-    padding: 200px 0px 60px 0px;
-    font-size: 70px;
+    padding: 18px 0px 36px 0px;
+    font-size: 38px;
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
 }
 
 .our-statistics-paragraph p {
-    padding: 0px 0px 180px 0px;
-    font-size: 29px;
+    padding: 0px 0px 38px 0px;
+    font-size: 27px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
@@ -340,11 +382,13 @@ header .nav li a {
 .main-score {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
     justify-content: space-between;
 }
 
 .main-score h1 {
-    font-size: 66px;
+    font-size: 39px;
     font-weight: 700;
 }
 
@@ -366,15 +410,17 @@ header .nav li a {
 }
 
 .herbert-paragraph {
-    padding: 380px 0px 74px 0px;
-    font-size: 50px;
+    padding: 159px 0px 74px 0px;
+    font-size: 32px;
 }
 
 .herbert-title h1 {
-    font-size: 58px;
-    font-weight: 700;
+    font-size: 44px;
+    font-weight: 500;
     font-family: 'Oswald', sans-serif;
 }
+
+
 
 
 /* subscibe */
@@ -388,17 +434,16 @@ header .nav li a {
 .subscribe {
     text-align: center;
     color: #fff;
-    padding: 0px 280px;
 }
-
 
 .subscribe-title h1 {
-    padding: 130px 0px 60px 0px;
-    font-size: 75px;
+    padding: 32px 0px 29px 0px;
+    font-size: 43px;
     font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-
+    font-weight: 500;
 }
+
+
 
 .subscribe-paragraph p {
     padding: 0px 0px 55px 0px;
@@ -419,14 +464,14 @@ form ::placeholder {
 
 form input {
     font-weight: 400;
-    padding: 24px 380px 24px 30px;
+    padding: 10px;
 }
+
 
 form button {
     font-size: 25px;
     font-weight: 600;
     background-color: #303030;
-    padding: 20px 50px;
     color: #fff;
 }
 
@@ -440,6 +485,7 @@ form button {
 
 .allsection {
     display: flex;
+    flex-direction: column;
     padding: 180px 0px 200px 0px;
 }
 
@@ -453,19 +499,23 @@ form button {
 }
 
 .titlesec p {
-    padding: 25px 47px 25px 0px;
-    font-size: 23px;
+    padding: 31px 0;
+    font-size: 31px;
     font-weight: 300;
 }
 
 .socilamedia {
+
+    margin-bottom: 20px;
     display: flex;
+    margin-left: -21px;
     gap: 20px;
 }
 
 .footerleft {
     min-width: 60%;
     display: flex;
+    flex-direction: column;
     gap: 50px;
     justify-content: right;
     font-size: 23.7px;
@@ -483,7 +533,7 @@ form button {
 
 .about ul li {
     padding-bottom: 10px;
-    font-size: 23px;
+    font-size: 32px;
     font-weight: 300;
 }
 
@@ -499,7 +549,7 @@ form button {
 
 .services ul li {
     padding-bottom: 10px;
-    font-size: 23px;
+    font-size: 32px;
     font-weight: 300;
 }
 
@@ -515,7 +565,7 @@ form button {
 
 .other ul li {
     padding-bottom: 10px;
-    font-size: 23px;
+    font-size: 32px;
     font-weight: 300;
 }
 
@@ -538,4 +588,229 @@ form button {
     color: antiquewhite;
 }
 
-/* 578px */
+/*Media Quers*/
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding: 0 55px;
+    }
+
+    header {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+
+    .mobile_header {
+        display: none;
+    }
+
+    .slider-description {
+        top: 40%;
+        left: 5%;
+        width: 635px;
+        /* transform: translate(0%, -70%); */
+    }
+
+    .slider-description {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        background: none;
+        width: 635px;
+        /* transform: translate(0%, -70%); */
+    }
+
+    .slider-descriptionp {
+        font-weight: 400;
+        /* padding: 35px 0px; */
+    }
+
+    .slider-description h2 {
+        font-weight: 400;
+        font-size: 124px;
+
+    }
+
+    .dance-tour h4 {
+        font-weight: 700;
+        font-size: 64px;
+        padding-bottom: 30px;
+    }
+
+    .cards {
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-direction: row;
+        padding-top: 50px;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .pcards {
+        flex-direction: row;
+    }
+
+    .pcard {
+        width: 30%;
+
+    }
+
+    .pricing h2 {
+        font-size: 64px;
+    }
+
+    .pcard h5 {
+        font-size: 28px;
+    }
+
+    .amazing-main {
+        flex-direction: row;
+    }
+
+    .amazing-main {
+        flex-direction: row;
+    }
+
+    .amazing-main {
+        width: 100%;
+    }
+
+    .amazing-dancedetail {
+
+        margin: 321px 0px 0px 0px;
+    }
+
+    .amazing-dancedetail a,
+    .best-dancedetail a {
+
+        padding: 18px 100px 18px 100px;
+    }
+
+    .best-main {
+
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .best-dancedetail {
+
+        margin: 321px 0px 0px 0px;
+    }
+
+    .our-statistics-title h1 {
+        padding: 200px 0px 60px 0px;
+        font-size: 70px;
+        font-weight: 700;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .main-score {
+        flex-direction: row;
+    }
+
+    .our-statistics-paragraph p {
+        padding: 0px 0px 180px 0px;
+        font-size: 29px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .main-score h1 {
+        font-size: 66px;
+        font-weight: 700;
+    }
+
+    .main-score p {
+        font-size: 41px;
+        font-weight: 400;
+    }
+
+    .main-our-statistics {
+        height: 974px;
+    }
+
+    .herbert-paragraph {
+        padding: 380px 0px 74px 0px;
+        font-size: 50px;
+    }
+
+    .herbert-title h1 {
+        font-size: 58px;
+        font-weight: 700;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .subscribe {
+        padding: 0px 280px;
+
+    }
+
+    .subscribe-title h1 {
+        padding: 130px 0px 60px 0px;
+        font-size: 75px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+
+    }
+
+    form input {
+        font-weight: 400;
+        padding: 24px 380px 24px 30px;
+    }
+
+    form button {
+
+        padding: 20px 50px;
+    }
+
+    .allsection {
+        flex-direction: row;
+    }
+
+    .footerleft {
+        flex-direction: row;
+    }
+
+    .titlesec p {
+        padding: 25px 47px 25px 0px;
+        font-size: 23px;
+    }
+
+    .about ul li {
+        font-size: 23px;
+    }
+
+    .services ul li {
+        font-size: 23px;
+    }
+
+    .other ul li {
+        font-size: 23px;
+    }
+
+    .socilamedia {
+        margin: 0;
+    }
+
+    .amazing-dancedetail h5,
+    .best-dancedetail h5 {
+
+        font-size: 75px;
+    }
+
+    .main-score h1 {
+        font-size: 66px;
+    }
+
+    .slider-description a {
+        padding: 25px 80px;
+        font-size: 25px;
+
+    }
+}
