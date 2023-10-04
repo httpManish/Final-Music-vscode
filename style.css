@@ -67,7 +67,7 @@ header .nav li a {
     padding: 15px 0;
 }
 
-#mobilenav {
+.mobilenav {
     display: none;
 }
 
@@ -489,9 +489,6 @@ form button {
     padding: 180px 0px 200px 0px;
 }
 
-.titlesec {
-    min-width: 40%;
-}
 
 .titlesec h3 {
     font-size: 31px;
@@ -505,10 +502,8 @@ form button {
 }
 
 .socilamedia {
-
-    margin-bottom: 20px;
+    margin: 20px 0px;
     display: flex;
-    margin-left: -21px;
     gap: 20px;
 }
 
@@ -522,7 +517,7 @@ form button {
 }
 
 .about {
-    min-width: 20%;
+    padding: 20px 0px;
 }
 
 .about h3 {
